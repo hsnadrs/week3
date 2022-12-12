@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=K2D');
+
+*{
+    box-sizing: border-box; 
+}
+
+
+ .yellowText{
+    color: rgb(218, 151, 28);
+}
+
+.blueText{
+    color:blue;
+} 
+.wrapper{
+
+    display: :flex;
+    justify-content:center;
+}
+body{    position: relative;
+    background-color: white;
+    height: 100vh;
+    justify-content: center;
+    align-items:center;  
+    display: flex;
+
+    font-family: 'K2D', sans-serif;
+    background-color:black;
+
+}
+a{color:gray;
+font-size: 40px;
+text-decoration: none}
+
+
+ 
+    .ctaBtn{    
+        width:200px;
+        transition: 1s;     
+        display: flex;
+        background-color: rgb(83, 139, 204);
+        text-align: center;
+        text-decoration: none;
+        font-family: 'K2D', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        /* transform: skewX(-10deg); */
+        /* margin: 0px 00px; */
+        
+        box-shadow: 15px 5px rgb(22, 180, 56);
+        border-radius: 10px;    
+         
+        border: 1px solid rgb(140, 140, 155);
+
+    }
+
+    .ctaBtn:hover{
+
+        transform:  rotate(360deg) scale(0.5) skewX(-10deg) ; 
+       
+    } 
+
+
+
+    
+  
+
+.websiteBtn{position: relative;
+        left:-400px;
+        top:100px;
+        background-color: rgb(218, 151, 28);
+        border-radius: 30px;
+        color:rgb(43, 24, 150);
+        text-shadow: 2px 2px rgb(241, 238, 238);
+        box-shadow: 5px 4px rgb(66, 57, 194);
+        
+        transform: skewX(-45deg);
+        padding:10px 5px 5px 5px;
+    }
+.websiteBtn:hover {
+    animation: shake 0.5s infinite both;
+    border-radius: 50px;
+    }
+    
+.fbBtn{position: relative;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(21, 21, 145);
+    color: white;
+    left: -200px;
+    top:-200px;
+    border-radius: 10px;
+    box-shadow:9px 7px white;
+    /* transform: translateX(0%); */
+ 
+}
+
+.fbBtn:hover{
+
+    background-color: white;
+    box-shadow: 9px 7px rgb(21, 21, 145);
+    color:rgb(21, 21, 145);
+    text-decoration: underline;
+    transition: 3s;
+    animation: fb-transform 1s both infinite, ;
+    
+   
+}
+
+.twitterBtn{
+    position: relative;
+    left:0px;
+    top:100px;
+    font-size: 100px;
+color:rgb(30, 105, 218);
+box-shadow: 9px 7px rgb(190, 23, 37);
+/* background-color: white; */
+/* padding:10px; */
+border-radius: 5px;
+/* border: 3px solid rgb(155, 140, 141); */
+}
+
+.twitterBtn:hover i{
+ background-color: rgb(131, 128, 128);
+ border-radius: 50px;
+    animation: scaleA 2s infinite both,  ;
+    
+    
+}
+
+.instagramBtn{
+     position: absolute;
+        left:500px; 
+        top:500px;
+    padding:30px 50px;
+    font-size: 60px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 9px 7px rgb(21, 21, 145);
+    color:white;
+    border: 3px solid white 
+    }
+
+   .instagramBtn:hover{
+    /* color:gray; */
+    animation: scaleB 1s infinite both;
+     
+
+   } 
+
+
+/* for facebook button also */
+@keyframes fb-transform {
+
+            
+             0%{padding: 10px }
+            50%{padding: 20px}
+            100%{padding: 10px}
+        }
+/* for website button */
+@keyframes shake{
+    0%{transform: translateX(0%)}
+    50%{transform: translateX(-10%)}
+    100%{transform: translateX(0%)}
+
+}
+/* for twitter button */
+@keyframes scaleA{
+    0%{transform: scale(1)}
+    50%{transform: scale(2)}
+    100%{transform: scale(0.5)}
+
+}
+
+
+/* for instgram also */
+@keyframes scaleB{
+    0%{transform: scale(1)}
+    50%{transform: scale(0.8)}
+    75%{transform: scale(1.5)}
+    100%{transform: scale(1.0)}}
+
+/* first background griedent change */
+    @keyframes color {
+        0%   { background: #33CCCC; }
+        20%  { background: #33CC36; }
+        40%  { background: #B8CC33; }
+        60%  { background: #FCCA00; }
+        80%  { background: #33CC36; }
+        100% { background: #33CCCC; }
+      }
+/* second background image scrol */
+@keyframes backgroundScroll 
+{
+    0%   { <img  }
+    20%  { background: #33CC36; }
+    40%  { background: #B8CC33; }
+    60%  { background: #FCCA00; }
+    80%  { background: #33CC36; }
+    100% { background: #33CCCC; }
+  }
+/* {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+    } */
+    body {
+        /* apply background ingriedent to body */
+        background: #33CCCC; /* Fallback */
+         animation: color 9s infinite linear;
+        text-align: center;
+        padding: 2em;
+       
+      }
